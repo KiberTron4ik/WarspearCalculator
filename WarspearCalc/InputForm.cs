@@ -48,15 +48,15 @@ namespace WarspearCalc
                 {
                     case "BarbarianIcon":
                         BarbarianForm barbarForm = new BarbarianForm();
-                        barbarForm.Show();
+                        barbarForm.ShowDialog();
                         break;
                     case "ShamanIcon":
                         ShamanForm shamanForm = new ShamanForm();
-                        shamanForm.Show();
+                        shamanForm.ShowDialog();
                         break;
                     case "BdIcon":
                         BladeDancerForm bdForm = new BladeDancerForm();
-                        bdForm.Show();
+                        bdForm.ShowDialog();
                         break;
                     case "HunterIcon":
                         break;

@@ -22,7 +22,7 @@ namespace WarspearCalc
         {
             Stats.IconName = (sender as PictureBox).Name;
             inputform = new InputForm();
-            inputform.Show();
+            inputform.ShowDialog();
         }
     }
 }
