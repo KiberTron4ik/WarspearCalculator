@@ -168,11 +168,11 @@
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(229, 230);
+            this.SendButton.Location = new System.Drawing.Point(220, 230);
             this.SendButton.Name = "SendButton";
-            this.SendButton.Size = new System.Drawing.Size(118, 36);
+            this.SendButton.Size = new System.Drawing.Size(127, 36);
             this.SendButton.TabIndex = 17;
-            this.SendButton.Text = "Расчитать";
+            this.SendButton.Text = "Рассчитать";
             this.SendButton.UseVisualStyleBackColor = true;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
