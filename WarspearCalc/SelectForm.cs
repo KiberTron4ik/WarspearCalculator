@@ -20,7 +20,7 @@ namespace WarspearCalc
 
         private void SelectChamp(object sender, EventArgs e)
         {
-            Stats.IconName = (sender as PictureBox).Name;
+            Character.IconName = (sender as PictureBox).Name;
             inputform = new InputForm();
             inputform.ShowDialog();
         }

@@ -115,7 +115,7 @@
       <DependentUpon>ShamanForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ShamanSkills.cs" />
-    <Compile Include="Stats.cs" />
+    <Compile Include="Character.cs" />
     <EmbeddedResource Include="BarbarianForm.resx">
       <DependentUpon>BarbarianForm.cs</DependentUpon>
     </EmbeddedResource>

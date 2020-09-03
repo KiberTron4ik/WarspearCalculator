@@ -29,23 +29,25 @@ namespace WarspearCalc
             {
                 MessageBox.Show("Заполните все поля!", "Ошибка!", MessageBoxButtons.OK);
             }
-            else if (float.Parse(textBox3.Text) > 50 || float.Parse(textBox4.Text) > 50 || float.Parse(textBox8.Text) > 60 || int.Parse(textBox5.Text) > 32 || int.Parse(textBox5.Text) < 1)
+            else if (float.Parse(textBox3.Text) > 50 || float.Parse(textBox4.Text) > 50 || float.Parse(textBox6.Text) > 50 || float.Parse(textBox9.Text) > 60 || int.Parse(textBox5.Text) > 32 || int.Parse(textBox5.Text) < 1)
             {
                 MessageBox.Show("Неверные значения!", "Ошибка!", MessageBoxButtons.OK);
             }
             else
             {
-                Stats.PhysicalDmg = Convert.ToDouble(textBox1.Text);
-                Stats.MagicalDmg = Convert.ToDouble(textBox2.Text);
-                Stats.Ferocity = Convert.ToDouble(textBox3.Text) / 100;
-                Stats.Penetration = Convert.ToDouble(textBox4.Text) / 100;
-                Stats.Level = Convert.ToDouble(textBox5.Text);
-                Stats.PhysicalDef = Convert.ToDouble(textBox6.Text) / (float.Parse(textBox6.Text) + 6500);
-                Stats.MagicalDef = Convert.ToDouble(textBox7.Text) / (float.Parse(textBox7.Text) + 6500);
-                Stats.Sustain = Convert.ToDouble(textBox8.Text) / 100;
+                Character.PhysicalDmg = Convert.ToDouble(textBox1.Text);
+                Character.MagicalDmg = Convert.ToDouble(textBox2.Text);
+                Character.Ferocity = Convert.ToDouble(textBox3.Text) / 100;
+                Character.Penetration = Convert.ToDouble(textBox4.Text) / 100;
+                Character.Level = Convert.ToDouble(textBox5.Text);
+                Character.PowerAuto = Convert.ToDouble(textBox6.Text) / 100;
+                Character.PhysicalDef = Convert.ToDouble(textBox7.Text) / (float.Parse(textBox6.Text) + 6500);
+                Character.MagicalDef = Convert.ToDouble(textBox8.Text) / (float.Parse(textBox7.Text) + 6500);
+                Character.Sustain = Convert.ToDouble(textBox9.Text) / 100;
 
-                switch (Stats.IconName)
+                    switch (Character.IconName)
                 {
+                    
                     case "BarbarianIcon":
                         BarbarianForm barbarForm = new BarbarianForm();
                         barbarForm.ShowDialog();
