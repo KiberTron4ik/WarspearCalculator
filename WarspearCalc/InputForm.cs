@@ -41,8 +41,8 @@ namespace WarspearCalc
                 Character.Penetration = Convert.ToDouble(textBox4.Text) / 100;
                 Character.Level = Convert.ToDouble(textBox5.Text);
                 Character.PowerAuto = Convert.ToDouble(textBox6.Text) / 100;
-                Character.PhysicalDef = Convert.ToDouble(textBox7.Text) / (float.Parse(textBox6.Text) + 6500);
-                Character.MagicalDef = Convert.ToDouble(textBox8.Text) / (float.Parse(textBox7.Text) + 6500);
+                Character.PhysicalDef = Convert.ToDouble(textBox7.Text) / (float.Parse(textBox7.Text) + 6500);
+                Character.MagicalDef = Convert.ToDouble(textBox8.Text) / (float.Parse(textBox8.Text) + 6500);
                 Character.Sustain = Convert.ToDouble(textBox9.Text) / 100;
 
                     switch (Character.IconName)

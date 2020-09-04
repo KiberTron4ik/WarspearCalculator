@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using WarspearCalc.Properties;
 
 namespace WarspearCalc
 {
     public class ShamanSkills
     {
-        public int Autoattack = Convert.ToInt32(Character.RealDamage(Character.MagicalDmg, Character.MagicalDef) + (Character.RealDamage(Character.MagicalDmg, Character.MagicalDef) * Character.PowerAuto));
+        public List<Image> SkillIcons = new List<Image> {Resources.Sham1basic, Resources.Sham2basic, Resources.Sham3basic, Resources.Sham1exp, Resources.Sham2exp, Resources.Sham3exp};
+
+        public int Autoattack = Convert.ToInt32(Character.RealDamage(Character.MagicalDmg + Character.MagicalDmg * Character.PowerAuto, Character.MagicalDef));
 
         public int BallLightning(int SkillLevel)
         {
